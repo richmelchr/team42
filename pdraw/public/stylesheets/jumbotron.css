@@ -76,14 +76,17 @@ body {
 }
 /*----------------------------*/
 #commands {
-	border:1px solid red;
+	border:1px solid #888;
 	float: left;
 	height: 40px;
 	width: 960px
 }
+
+#launch {
+	width: 950px;
+}
 .final {
 	float: left;
-	width: 480px;
 }
 .final button {
 	color: #fff;
@@ -95,8 +98,10 @@ body {
 }
 button.center {
 	margin-top: 20px;
-	margin-left: 165px;	
+	margin-left: 130px;	
 }
 
-
+.col-md-3 p {
+	font-size: 1.2em;
+}
 

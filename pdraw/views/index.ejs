@@ -61,7 +61,7 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Hello, world!</h1>
-        <p>We are Team42 from ASU. This is a breif description of our project goals and potential. The tools we used to build our hack and the things we learned along the way.</p>
+        <p>We are Team42 from ASU. We built a web interface to control a drone with a script. The tools we used to build this hack are Node.js, Bootstrap, a Parrot AR-Drone2.0 and Redbull. Given more time we would have attached fricken lasers</p>
 
         <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
@@ -90,20 +90,20 @@
 
           <div id="interface">
             <div class="buttons">
-              <li>
+              <li id="up">
                 <button class="myBtn">Up</button>
-                <select class="btn-sel"  tabindex="100">
-                  <option value></option>
+                <select id="up" class="btn-sel"  tabindex="100">
+                  <option value="1">1</option>
                   <option value="3">3</option>
                   <option value="5">5</option>
                   <option value="10">10</option>
                 </select>
               </li>
 
-              <li>
+              <li id="down">
                 <button class="myBtn">Down</button>
-                <select class="btn-sel"  tabindex="100">
-                  <option value></option>
+                <select id="down" class="btn-sel"  tabindex="100">
+                  <option value="1">1</option>
                   <option value="3">3</option>
                   <option value="5">5</option>
                   <option value="10">10</option>
@@ -112,20 +112,20 @@
             </div>
 
             <div class="buttons">
-              <li>
+              <li id="turnRight">
                 <button class="myBtn">Turn Right</button>
-                <select class="btn-sel"  tabindex="100">
-                  <option value></option>
+                <select id="turnRight" class="btn-sel"  tabindex="100">
+                  <option value="1">1</option>
                   <option value="3">3</option>
                   <option value="5">5</option>
                   <option value="10">10</option>
                 </select>
               </li>
 
-              <li>
+              <li id="turnLeft">
                 <button class="myBtn">Turn Left</button>
-                <select class="btn-sel"  tabindex="100">
-                  <option value></option>
+                <select id="turnLeft" class="btn-sel"  tabindex="100">
+                  <option value="1">1</option>
                   <option value="3">3</option>
                   <option value="5">5</option>
                   <option value="10">10</option>
@@ -134,20 +134,20 @@
             </div>
 
             <div class="buttons">
-              <li>
+              <li id="forward">
                 <button class="myBtn">Forward</button>
-                <select class="btn-sel"  tabindex="100">
-                  <option value></option>
+                <select id="forward" class="btn-sel"  tabindex="100">
+                  <option value="1">1</option>
                   <option value="3">3</option>
                   <option value="5">5</option>
                   <option value="10">10</option>
                 </select>
               </li>
 
-              <li>
+              <li id="backward">
                 <button class="myBtn">Backward</button>
-                <select class="btn-sel"  tabindex="100">
-                  <option value></option>
+                <select id="backward" class="btn-sel"  tabindex="100">
+                  <option value="1">1</option>
                   <option value="3">3</option>
                   <option value="5">5</option>
                   <option value="10">10</option>
@@ -156,20 +156,20 @@
             </div>
 
             <div class="buttons">
-              <li>
+              <li id="sLeft">
                 <button class="myBtn">Strafe Left</button>
-                <select class="btn-sel"  tabindex="100">
-                  <option value></option>
+                <select id="sLeft" class="btn-sel"  tabindex="100">
+                  <option value="1">1</option>
                   <option value="3">3</option>
                   <option value="5">5</option>
                   <option value="10">10</option>
                 </select>
               </li>
 
-              <li>
+              <li id="sRight">
                 <button class="myBtn">Strafe Right</button>
-                <select class="btn-sel"  tabindex="100">
-                  <option value></option>
+                <select id="sRight" class="btn-sel"  tabindex="100">
+                  <option value="1">1</option>
                   <option value="3">3</option>
                   <option value="5">5</option>
                   <option value="10">10</option>
@@ -178,20 +178,25 @@
             </div>
 
             <div class="buttons">
-              <li><button class="myBtn">Flip Left</button></li>
-              <li><button class="myBtn">Flip Right</button></li>
+              <li id="fLeft"><button class="myBtn">Flip Left</button></li>
+              <li id="fRight"><button class="myBtn">Flip Right</button></li>
             </div>
 
             <div id="commands">
+              <p></p>
             </div>
 
-            <div>
+            <div id="launch">
               <div class="final">
-                <button class="center">Start!</button>
+                <button id="start" class="center">Start!</button>
               </div>
 
               <div class="final">
-                <button class="center">Kill</button>
+                <button id="clear" class="center">Clear</button>
+              </div>
+
+              <div class="final">
+                <button id="kill" class="center">KILL</button>
               </div>
             </div>
 
@@ -213,7 +218,8 @@
 
         <div class="col-md-3">
           <h2>Richard Melcher</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p>Is a Sun Devil working on his BS in Software Engineering. He build this website and
+            owns a cat named Michio Kaku.</p>
         
         </div>
 
@@ -249,5 +255,7 @@
     <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script src="/javascripts/ie-emulation-modes-warning.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/javascripts/myscript.js"></script>
   </body>
 </html>
