@@ -1,4 +1,7 @@
+
 $(document).ready(function() {
+      
+   
    $("button.myBtn").click(function() {
       var option = $(this).parent().attr('id');
       var maybe = $("select#" + option + ".btn-sel").val();
@@ -11,8 +14,10 @@ $(document).ready(function() {
    })
 
    $("#start").click(function() {
+      $("#commands p")
+
       //do stuff-n-things
-      
+
    })
 
    $("#clear").click(function() { //clear the text inside command <p>
@@ -24,6 +29,7 @@ $(document).ready(function() {
       //do stuff-n-things
    })
 })
+
 
 
 
