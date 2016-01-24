@@ -12,10 +12,10 @@
     <title><%= title %></title>
 
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="/stylesheets/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -41,10 +41,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">Team42 | HackAZ</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right">
+      <!--<form class="navbar-form navbar-right">
             <div class="form-group">
               <input type="text" placeholder="Email" class="form-control">
             </div>
@@ -52,7 +52,7 @@
               <input type="password" placeholder="Password" class="form-control">
             </div>
             <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
+          </form>-->
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
@@ -61,58 +61,183 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-        <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</button>
+        <p>We are Team42 from ASU. This is a breif description of our project goals and potential. The tools we used to build our hack and the things we learned along the way.</p>
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+      Ready For Launch!
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Parrot AR Drone 2.0</h4>
+          </div>
+          <div class="modal-body">
+            
+          <div style="position: relative;">  
+            <div id="left-vid">
+
+            </div>
+
+            <div id="right-vid">
+
+            </div>
+          </div>
+
+          <div id="interface">
+            <div class="buttons">
+              <li>
+                <button class="myBtn">Up</button>
+                <select class="btn-sel"  tabindex="100">
+                  <option value></option>
+                  <option value="3">3</option>
+                  <option value="5">5</option>
+                  <option value="10">10</option>
+                </select>
+              </li>
+
+              <li>
+                <button class="myBtn">Down</button>
+                <select class="btn-sel"  tabindex="100">
+                  <option value></option>
+                  <option value="3">3</option>
+                  <option value="5">5</option>
+                  <option value="10">10</option>
+                </select>
+              </li>
+            </div>
+
+            <div class="buttons">
+              <li>
+                <button class="myBtn">Turn Right</button>
+                <select class="btn-sel"  tabindex="100">
+                  <option value></option>
+                  <option value="3">3</option>
+                  <option value="5">5</option>
+                  <option value="10">10</option>
+                </select>
+              </li>
+
+              <li>
+                <button class="myBtn">Turn Left</button>
+                <select class="btn-sel"  tabindex="100">
+                  <option value></option>
+                  <option value="3">3</option>
+                  <option value="5">5</option>
+                  <option value="10">10</option>
+                </select>
+              </li>
+            </div>
+
+            <div class="buttons">
+              <li>
+                <button class="myBtn">Forward</button>
+                <select class="btn-sel"  tabindex="100">
+                  <option value></option>
+                  <option value="3">3</option>
+                  <option value="5">5</option>
+                  <option value="10">10</option>
+                </select>
+              </li>
+
+              <li>
+                <button class="myBtn">Backward</button>
+                <select class="btn-sel"  tabindex="100">
+                  <option value></option>
+                  <option value="3">3</option>
+                  <option value="5">5</option>
+                  <option value="10">10</option>
+                </select>
+              </li>
+            </div>
+
+            <div class="buttons">
+              <li>
+                <button class="myBtn">Strafe Left</button>
+                <select class="btn-sel"  tabindex="100">
+                  <option value></option>
+                  <option value="3">3</option>
+                  <option value="5">5</option>
+                  <option value="10">10</option>
+                </select>
+              </li>
+
+              <li>
+                <button class="myBtn">Strafe Right</button>
+                <select class="btn-sel"  tabindex="100">
+                  <option value></option>
+                  <option value="3">3</option>
+                  <option value="5">5</option>
+                  <option value="10">10</option>
+                </select>
+              </li>
+            </div>
+
+            <div class="buttons">
+              <li><button class="myBtn">Flip Left</button></li>
+              <li><button class="myBtn">Flip Right</button></li>
+            </div>
+
+            <div id="commands">
+            </div>
+
+            <div>
+              <div class="final">
+                <button class="center">Start!</button>
+              </div>
+
+              <div class="final">
+                <button class="center">Kill</button>
+              </div>
+            </div>
+
+          </div>
+
+          </div>
+          <div class="modal-footer"></div>
+
+
+        </div>
       </div>
     </div>
-  </div>
-</div>
       </div>
     </div>
 
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
+
+        <div class="col-md-3">
+          <h2>Richard Melcher</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        
         </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
+
+        <div class="col-md-3">
+          <h2>Frodo Baggins</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        
+        </div>
+
+        <div class="col-md-3">
+          <h2>Mona Cook</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        
        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
+
+        <div class="col-md-3">
+          <h2>Joseph Thweatt</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
       </div>
 
       <hr>
 
       <footer>
-        <p>&copy; 2015 Company, Inc.</p>
       </footer>
     </div> <!-- /container -->
 
